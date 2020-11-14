@@ -24,6 +24,7 @@ function addingPushingToRemote() {
   git add .
   git commit -m "initial commit"
   git push -u origin master
+  echo "Script executed!"
 }
 
 cDir 
