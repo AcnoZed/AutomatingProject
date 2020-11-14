@@ -17,8 +17,9 @@ function mkDirAndcDir() {
 function newReadmeGitInit() {
   touch README.adoc
   git init
+  python3 /home/acno/Dokumente/Projects/MyProjects/AutomatingProject/Create.py "$1"
 }
 
 cDir 
 mkDirAndcDir $1
-newReadmeGitInit
+newReadmeGitInit $1
