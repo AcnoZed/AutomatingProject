@@ -19,7 +19,14 @@ function newReadmeGitInit() {
   git init
   python3 /home/acno/Dokumente/Projects/MyProjects/AutomatingProject/Create.py "$1"
 }
+function addingPushingToRemote() {
+  git remote add origin https://github.com/AcnoZed/"$1".git
+  git add .
+  git commit -m "initial commit"
+  git push -u origin master
+}
 
 cDir 
 mkDirAndcDir $1
 newReadmeGitInit $1
+addingPushingToRemote $1
